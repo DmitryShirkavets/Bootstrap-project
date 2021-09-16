@@ -1,0 +1,15 @@
+.menu{
+    &__list{
+        display: flex;
+        gap: 42px;
+        
+
+        &-link{
+            @include text('Quicksand', 12px, 500, 15px, $menuColor);
+
+            &:hover{
+                @include text('Quicksand', 12px, 700, 15px, $logoColor);
+            }
+        }
+    }
+}

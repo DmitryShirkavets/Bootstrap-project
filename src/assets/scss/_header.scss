@@ -1,0 +1,16 @@
+.header{
+    &__wrapper{
+        height: 80px;
+        background-color: $accentColor;
+        padding: 18px 0;
+    }
+
+    &__button{
+        @include text('Quicksand', 13px, 700, 16px, $buttonTextColor);
+        background-color: $buttonBackColor;
+        border: none;
+        border-radius: $borderRadiusButton;
+        width: 113px;
+        height: 43px;
+    }
+}
