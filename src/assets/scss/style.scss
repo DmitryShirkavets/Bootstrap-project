@@ -25,11 +25,13 @@ body{
 @import './abstracts/vars';
 @import './abstracts/mixins';
 
-// CONTAINER
-@import './container';
 
 // HEADER
 @import './header';
-
 // MENU
 @import './menu';
+// SOCIAL
+@import './social';
+
+// MAIN
+@import './main';

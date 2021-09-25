@@ -1,0 +1,37 @@
+.main{
+    padding-top: 91px;
+    padding-bottom: 212px;
+    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+
+    &__subtitle{
+        @include text($secondaryFont, 10px, 500, 11px, $titleColor);
+        margin-bottom: 16px;
+    }
+
+    &__title{
+        @include text($basicFont, 48px, 300, 60px, $titleColor);
+        margin-bottom: 28px;
+
+        span{
+            @include text($basicFont, 48px, 500, 60px, $titleColor);
+        }
+    }
+
+    &__text{
+        @include text($secondaryFont, 15px, 400, 28px, $textColor);
+        max-width: 520px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__button{
+        width: 52px;
+        height: 52px;
+        border: none;
+        border-radius: 50%;
+
+        &-img{
+            width: 10px;
+        }
+    }
+}

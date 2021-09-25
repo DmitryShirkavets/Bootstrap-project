@@ -1,4 +1,4 @@
-// colors
+// COLORS
 $accentColor: #fff;
 $titleColor: #3D4F9F;
 $textColor: #8D96BD;
@@ -7,11 +7,9 @@ $buttonBackColor: #D2E1FF;
 $buttonTextColor: #3A79FF;
 $logoColor: #5E81FE;
 
-// border-radius
-$borderRadiusButton: 2px;
+// FONTS
+$basicFont: 'Quicksand';
+$secondaryFont: 'Roboto';
 
-// container
-%container{
-    width: 1206px;
-    margin: 0 auto;
-}
+// BORDER-RADIUS
+$borderRadiusButton: 2px;
