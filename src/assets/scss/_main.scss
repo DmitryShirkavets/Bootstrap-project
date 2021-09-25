@@ -1,7 +1,12 @@
 .main{
     padding-top: 91px;
-    padding-bottom: 212px;
+    padding-bottom: 212px;  
+    // background: url('./../images/Vector.png') no-repeat center top / cover;
     background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+
+    &__background{
+        position: absolute;
+    }
 
     &__subtitle{
         @include text($secondaryFont, 10px, 500, 11px, $titleColor);
@@ -29,6 +34,7 @@
         height: 52px;
         border: none;
         border-radius: 50%;
+        background-color: $accentColor;
 
         &-img{
             width: 10px;
