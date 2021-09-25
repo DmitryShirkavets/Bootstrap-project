@@ -1,0 +1,63 @@
+.plan{
+    padding-top: 208px;
+    padding-bottom: 218px;
+    position: relative;
+    background-color: $planBackColor;
+
+    &::after{
+        content: "";
+        display: block;
+        background-image: url('./../images/planmanage.svg');
+        background-size: 857px 619px;
+        width: 857px;
+        height:  619px;
+        position: absolute;
+        top: 171px;
+        right: 2%;
+    }
+
+    &__subtitle{
+        @include text($secondaryFont, 10px, 500, 11px, $titleColor);
+        margin-bottom: 27px;
+    }
+    
+    &__title{
+        @include text($basicFont, 36px, 400, 45px, $titleColor);
+        margin-bottom: 27px;
+    
+        span{
+            @include text($basicFont, 36px, 500, 45px, $titleColor);
+        }
+    }
+
+    &__text{
+        @include text($secondaryFont, 15px, 400, 28px, $textColor);
+        max-width: 413px;
+        margin-bottom: 47px;
+    }
+
+    &__button{
+        &-video{
+            background-color: $buttonPlanColor;
+            @include text('Quicksand', 13px, 700, 16px, $accentColor);
+            border: none;
+            padding: 13px 25px;
+            border-radius: $borderRadiusButton;
+            box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+        }
+
+        &-img{
+            max-height: 7px;
+            filter: brightness(5);
+            margin-left: 2px;
+        }
+
+        &-features{
+            background-color: inherit;
+            @include text('Quicksand', 13px, 500, 16px, $buttonPlanSecColor);
+            border: 1px solid $buttonPlanBorderColor;
+            border-radius: $borderRadiusButton;
+            padding: 13px 21px;
+        }
+    }
+}
