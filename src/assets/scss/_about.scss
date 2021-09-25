@@ -1,0 +1,59 @@
+.about{
+    padding: 171px 0;
+
+    &__subtitle{
+        @include text($secondaryFont, 10px, 500, 11px, $titleColor);
+        margin-bottom: 20px;
+    }
+
+    &__title{
+        @include text($basicFont, 24px, 500, 30px, $titleColor);
+        margin-bottom: 92px;
+    }
+
+    &__list{
+        gap: 60px;
+
+        &-item{
+            max-width: 140px;
+        }
+
+        &-title{
+            @include text($thirdyFont, 14px, 700, 24px, $aboutListColor);
+            margin-top: 33px;
+        }
+
+        &-text{
+            @include text($thirdyFont, 11px, 600, 19px, $aboutTextColor);
+            margin-top: 25px;
+            
+        }
+    }
+
+    &__connect{
+        gap: 48px;
+        margin-top: 92px;
+
+        span{
+            @include text($thirdyFont, 11px, 600, 19px, $aboutTextColor);
+        }
+    }
+
+    &__button{
+        &-read{
+            @include text($basicFont, 13px, 700, 16px, $btnReadTextColor);
+            background-color: $btnReadBackColor;
+            border: none;
+            border-radius: $borderRadiusButton;
+            padding: 13px 15px;
+        }
+
+        &-start{
+            @include text($basicFont, 13px, 700, 16px, $buttonTextColor);
+            background-color: $buttonBackColor;
+            border: none;
+            border-radius: $borderRadiusButton;
+            padding: 13px 15px;
+        }
+    }
+}
