@@ -1,0 +1,31 @@
+.statistics{
+    &__productivity{
+        background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+        padding: 66px 90px;
+
+        &-percent{
+            @include text($basicFont, 48px, 400, 83px, $accentColor);
+        }
+
+        &-text{
+            @include text($basicFont, 18px, 500, 23px, $accentColor);
+            max-width: 260px;
+            text-align: right;
+        }
+    }
+
+    &__users{
+        background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+        padding: 70px 90px 66px;
+
+        &-count{
+            @include text($basicFont, 48px, 400, 83px, $statisticColor);
+        }
+
+        &-text{
+            @include text($basicFont, 18px, 500, 23px, $statisticColor);
+            max-width: 260px;
+            text-align: left;
+        }
+    }
+}
